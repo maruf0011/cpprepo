@@ -1,22 +1,22 @@
-#Chapter 2
+#Chapter 2 :
     * use {} bracket for initialization
 
-    ## constants
+    * constants
         * const (it should not be changed)
         * constexpr (should checked in compile time)
 
-    ## struct
+    * struct
         * user defined types
-    ## enum class
+    * enum class
         * user defined types
 
-# seperate compiliation cases 
-	* won't work
-# try catch
-	*static_assert(a,b) 
-		print b when a is false
+	* seperate compiliation cases 
+		* won't work
+	* try catch 
+		* static_assert(a,b) 
+			* print b when a is false
 
-#chapter 3 abstraction mechanishm
+#chapter 3 abstraction mechanishm :
 	* class 
 		* operator overload
 	* Container
@@ -62,7 +62,7 @@
 				[&name ] capture name by ref;
 				
 
-# Chapter 4 
+# Chapter 4 :
 	* String 
 		* mutable
 	* input/output stream
