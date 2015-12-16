@@ -19,9 +19,14 @@ int main(int argc, char const *argv[])
 	while(getline(ifs , str))
 	{
 		allword.push_back(str);
-		cout<<str<<endl;
+		// cout<<str<<endl;
 	}
 	//sort(allword.begin(), allword.end());
+
+	auto f = find_if(allword.begin(), allword.end() , [](string a){return a=="asdf";});
+
+	if(f!=allword.end()) cout<<"found "<<endl;
+	else cout<<"not found"<<endl;
 
 	copy(allword.begin(), allword.end() , ost);
 	return 0;

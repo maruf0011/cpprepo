@@ -74,5 +74,27 @@
 	* istream_iterator
 	* ostream_iterator
 * Predicates 
-		
+	* looks for an element that fulfills a specified requirement
+	* passing function object for requirement functions 
+		* auto f = find_if(allword.begin(), allword.end() , [](string a){return a=="asdf";});
+
+	* # algorithm list :
+	* # advice
+		* Don’t reinvent the wheel; use libraries; §4.1.
+		* When you have a choice, prefer the standard library over other libraries; §4.1.
+		* Do not think that the standard library is ideal for everything; §4.1.
+		* Remember to #include the headers for the facilities you use; §4.1.2.
+		* Remember that standard-library facilities are defined in namespace std ; §4.1.2.
+		* Prefer string s over C-style strings (a char∗ ; §2.2.5); §4.2, §4.3.2.
+		* iostream s are type sensitive, type-safe, and extensible; §4.3.
+		* Prefer vector<T> , map<K,T> , and unordered_map<K,T> over T[] ; §4.4.
+		* Know your standard containers and their tradeoffs; §4.4.
+		* Use vector as your default container; §4.4.1.
+		* Prefer compact data structures; §4.4.1.1.
+		* If in doubt, use a range-checked vector (such as Vec ); §4.4.1.2.
+		* Use push_back() or back_inser ter() to add elements to a container; §4.4.1, §4.5.
+		* Use push_back() on a vector rather than realloc() on an array; §4.5.
+		* Catch common exceptions in main() ; §4.4.1.2.
+		* Know your standard algorithms and prefer them over handwritten loops; §4.5.5.
+		* If iterator use gets tedious, define container algorithms; §4.5.6.
 
