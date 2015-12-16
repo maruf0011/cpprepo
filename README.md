@@ -38,18 +38,18 @@
 	* it's delete the object of the pointer when it's not needed
 
 * move and copy
-	** && value means the reference of the rvalue
-	** Vector v = v2 leave a reference not copy
-	** add a move constructor for movind object data such as for x+y+z
+	* && value means the reference of the rvalue
+	* Vector v = v2 leave a reference not copy
+	* add a move constructor for movind object data such as for x+y+z
 
 * resource allocation
-	**
+	*
 * suppressing operation
-	** type function() = delete means supress the move or copy operation using super class
+	* type function() = delete means supress the move or copy operation using super class
 * templates 
-	** 
+	* 
 * function templates 
-	**  template<typename Container, typename Value>
+	*  template<typename Container, typename Value>
 		Value sum(const Container& c, Value v)
 		{
 			for (auto x : c)
@@ -57,8 +57,8 @@
 			return v;
 		} 
 
-	** function object 
-		** lambda funciton [&] capture all by ref,[]caplture nothing , [=]capture all by value
+	* function object 
+		* lambda funciton [&] capture all by ref,[]caplture nothing , [=]capture all by value
 			[&name ] capture name by ref;
 			
 
